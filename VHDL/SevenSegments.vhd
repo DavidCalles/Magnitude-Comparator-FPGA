@@ -1,4 +1,4 @@
--- PARKING INDICATOR LAB
+-- SevenSegments.vhd
 
 --****************************************************
 --	Description: Get outputs for the 7 segments from 
@@ -9,6 +9,8 @@
 --	Outputs: reg[6:0] segments, obtained through 
 --				behavioral description. (low means ON)
 --***************************************************/
+
+-- Libraries
 
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -52,6 +54,18 @@ begin
 				segmentLed <= "0000000"; -- segment 8
 			when "1001"  =>   
 				segmentLed <= "0011000"; -- segment 9
+			when "1010"  =>   
+				segmentLed <= "0001000"; -- segment A
+			when "1011"  =>   
+				segmentLed <= "0000011"; -- segment b
+			when "1100"  =>   
+				segmentLed <= "0100111"; -- segment c
+			when "1101"  =>   
+				segmentLed <= "0100001"; -- segment d
+			when "1110"  =>   
+				segmentLed <= "0000110"; -- segment E
+			when "1111"  =>   
+				segmentLed <= "0001110"; -- segment f
 			when others  =>   
 				segmentLed <= "0111111"; -- segment -
 		end case;

@@ -14,6 +14,8 @@
 --				segmentM: Seven segments indicating >, <, or =
 --***********************************************************************
 
+-- Libraries
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.NUMERIC_STD.ALL;
@@ -79,13 +81,15 @@ begin
 		port map ( sw(7 downto 4), sw(3 downto 0),
 					  ComparisonSignal(2), ComparisonSignal(1),
 					  ComparisonSignal(0) ); 
--- LEFT
+-- LEFT digit
 	SevenSegmentsL: SevenSegments 
 		port map ( sw(7 downto 4),  segmentA );
 		
+-- RIGHT digit
 	SevenSegmentsR: SevenSegments 
 		port map ( sw(3 downto 0),  segmentB );
 		
+-- Comparison symbol
 	SevenSegmentsM: SevenSegmentsModified 
 		port map ( ComparisonSignal,  segmentM );
 		

@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "07/07/2021 17:43:15"
+-- DATE "07/07/2021 18:01:38"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -37,10 +37,10 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	DCalles_Lab5_MagnitudeComparator IS
     PORT (
 	sw : IN std_logic_vector(7 DOWNTO 0);
-	led : BUFFER std_logic_vector(2 DOWNTO 0);
-	segmentA : BUFFER std_logic_vector(6 DOWNTO 0);
-	segmentB : BUFFER std_logic_vector(6 DOWNTO 0);
-	segmentM : BUFFER std_logic_vector(6 DOWNTO 0)
+	led : OUT std_logic_vector(2 DOWNTO 0);
+	segmentA : OUT std_logic_vector(6 DOWNTO 0);
+	segmentB : OUT std_logic_vector(6 DOWNTO 0);
+	segmentM : OUT std_logic_vector(6 DOWNTO 0)
 	);
 END DCalles_Lab5_MagnitudeComparator;
 
@@ -124,18 +124,18 @@ SIGNAL \SevenSegmentsR|Mux1~0_combout\ : std_logic;
 SIGNAL \SevenSegmentsR|Mux0~0_combout\ : std_logic;
 SIGNAL \SevenSegmentsM|Mux2~0_combout\ : std_logic;
 SIGNAL \SevenSegmentsM|Mux0~0_combout\ : std_logic;
-SIGNAL \Comparator1|ALT_INV_Equal~combout\ : std_logic;
-SIGNAL \SevenSegmentsL|ALT_INV_Mux0~0_combout\ : std_logic;
-SIGNAL \SevenSegmentsR|ALT_INV_Mux0~0_combout\ : std_logic;
-SIGNAL \SevenSegmentsM|ALT_INV_Mux0~0_combout\ : std_logic;
-SIGNAL \ALT_INV_sw[0]~input_o\ : std_logic;
-SIGNAL \ALT_INV_sw[4]~input_o\ : std_logic;
-SIGNAL \ALT_INV_sw[1]~input_o\ : std_logic;
-SIGNAL \ALT_INV_sw[5]~input_o\ : std_logic;
-SIGNAL \ALT_INV_sw[2]~input_o\ : std_logic;
-SIGNAL \ALT_INV_sw[6]~input_o\ : std_logic;
-SIGNAL \ALT_INV_sw[3]~input_o\ : std_logic;
 SIGNAL \ALT_INV_sw[7]~input_o\ : std_logic;
+SIGNAL \ALT_INV_sw[3]~input_o\ : std_logic;
+SIGNAL \ALT_INV_sw[6]~input_o\ : std_logic;
+SIGNAL \ALT_INV_sw[2]~input_o\ : std_logic;
+SIGNAL \ALT_INV_sw[5]~input_o\ : std_logic;
+SIGNAL \ALT_INV_sw[1]~input_o\ : std_logic;
+SIGNAL \ALT_INV_sw[4]~input_o\ : std_logic;
+SIGNAL \ALT_INV_sw[0]~input_o\ : std_logic;
+SIGNAL \SevenSegmentsM|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \SevenSegmentsR|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \SevenSegmentsL|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \Comparator1|ALT_INV_Equal~combout\ : std_logic;
 SIGNAL \Comparator1|ALT_INV_BigA~0_combout\ : std_logic;
 SIGNAL \Comparator1|ALT_INV_BigA~1_combout\ : std_logic;
 SIGNAL \Comparator1|ALT_INV_BigB~combout\ : std_logic;
@@ -150,18 +150,18 @@ segmentM <= ww_segmentM;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\Comparator1|ALT_INV_Equal~combout\ <= NOT \Comparator1|Equal~combout\;
-\SevenSegmentsL|ALT_INV_Mux0~0_combout\ <= NOT \SevenSegmentsL|Mux0~0_combout\;
-\SevenSegmentsR|ALT_INV_Mux0~0_combout\ <= NOT \SevenSegmentsR|Mux0~0_combout\;
-\SevenSegmentsM|ALT_INV_Mux0~0_combout\ <= NOT \SevenSegmentsM|Mux0~0_combout\;
-\ALT_INV_sw[0]~input_o\ <= NOT \sw[0]~input_o\;
-\ALT_INV_sw[4]~input_o\ <= NOT \sw[4]~input_o\;
-\ALT_INV_sw[1]~input_o\ <= NOT \sw[1]~input_o\;
-\ALT_INV_sw[5]~input_o\ <= NOT \sw[5]~input_o\;
-\ALT_INV_sw[2]~input_o\ <= NOT \sw[2]~input_o\;
-\ALT_INV_sw[6]~input_o\ <= NOT \sw[6]~input_o\;
-\ALT_INV_sw[3]~input_o\ <= NOT \sw[3]~input_o\;
 \ALT_INV_sw[7]~input_o\ <= NOT \sw[7]~input_o\;
+\ALT_INV_sw[3]~input_o\ <= NOT \sw[3]~input_o\;
+\ALT_INV_sw[6]~input_o\ <= NOT \sw[6]~input_o\;
+\ALT_INV_sw[2]~input_o\ <= NOT \sw[2]~input_o\;
+\ALT_INV_sw[5]~input_o\ <= NOT \sw[5]~input_o\;
+\ALT_INV_sw[1]~input_o\ <= NOT \sw[1]~input_o\;
+\ALT_INV_sw[4]~input_o\ <= NOT \sw[4]~input_o\;
+\ALT_INV_sw[0]~input_o\ <= NOT \sw[0]~input_o\;
+\SevenSegmentsM|ALT_INV_Mux0~0_combout\ <= NOT \SevenSegmentsM|Mux0~0_combout\;
+\SevenSegmentsR|ALT_INV_Mux0~0_combout\ <= NOT \SevenSegmentsR|Mux0~0_combout\;
+\SevenSegmentsL|ALT_INV_Mux0~0_combout\ <= NOT \SevenSegmentsL|Mux0~0_combout\;
+\Comparator1|ALT_INV_Equal~combout\ <= NOT \Comparator1|Equal~combout\;
 \Comparator1|ALT_INV_BigA~0_combout\ <= NOT \Comparator1|BigA~0_combout\;
 \Comparator1|ALT_INV_BigA~1_combout\ <= NOT \Comparator1|BigA~1_combout\;
 \Comparator1|ALT_INV_BigB~combout\ <= NOT \Comparator1|BigB~combout\;
@@ -667,13 +667,13 @@ PORT MAP (
 -- Location: LABCELL_X83_Y16_N0
 \SevenSegmentsL|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \SevenSegmentsL|Mux6~0_combout\ = ( \sw[4]~input_o\ & ( \sw[5]~input_o\ & ( \sw[7]~input_o\ ) ) ) # ( !\sw[4]~input_o\ & ( \sw[5]~input_o\ & ( \sw[7]~input_o\ ) ) ) # ( \sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( !\sw[7]~input_o\ $ (\sw[6]~input_o\) ) ) ) # 
--- ( !\sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( \sw[6]~input_o\ ) ) )
+-- \SevenSegmentsL|Mux6~0_combout\ = ( \sw[4]~input_o\ & ( \sw[5]~input_o\ & ( (\sw[7]~input_o\ & !\sw[6]~input_o\) ) ) ) # ( \sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( !\sw[7]~input_o\ $ (\sw[6]~input_o\) ) ) ) # ( !\sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( 
+-- \sw[6]~input_o\ ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111110000111100001100110011001100110011001100110011",
+	lut_mask => "0000111100001111110000111100001100000000000000000011000000110000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -686,13 +686,13 @@ PORT MAP (
 -- Location: LABCELL_X83_Y16_N39
 \SevenSegmentsL|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \SevenSegmentsL|Mux5~0_combout\ = ( \sw[4]~input_o\ & ( \sw[5]~input_o\ & ( \sw[7]~input_o\ ) ) ) # ( !\sw[4]~input_o\ & ( \sw[5]~input_o\ & ( (\sw[7]~input_o\) # (\sw[6]~input_o\) ) ) ) # ( \sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( \sw[6]~input_o\ ) ) ) # 
+-- \SevenSegmentsL|Mux5~0_combout\ = ( \sw[4]~input_o\ & ( \sw[5]~input_o\ & ( \sw[7]~input_o\ ) ) ) # ( !\sw[4]~input_o\ & ( \sw[5]~input_o\ & ( \sw[6]~input_o\ ) ) ) # ( \sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( (\sw[6]~input_o\ & !\sw[7]~input_o\) ) ) ) # 
 -- ( !\sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( (\sw[6]~input_o\ & \sw[7]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000010100000101010101010101010101011111010111110000111100001111",
+	lut_mask => "0000010100000101010100000101000001010101010101010000111100001111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -705,13 +705,13 @@ PORT MAP (
 -- Location: LABCELL_X83_Y16_N12
 \SevenSegmentsL|Mux4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \SevenSegmentsL|Mux4~0_combout\ = ( \sw[4]~input_o\ & ( \sw[5]~input_o\ & ( \sw[7]~input_o\ ) ) ) # ( !\sw[4]~input_o\ & ( \sw[5]~input_o\ & ( (!\sw[6]~input_o\) # (\sw[7]~input_o\) ) ) ) # ( \sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( (\sw[7]~input_o\ & 
--- \sw[6]~input_o\) ) ) ) # ( !\sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( (\sw[7]~input_o\ & \sw[6]~input_o\) ) ) )
+-- \SevenSegmentsL|Mux4~0_combout\ = ( \sw[4]~input_o\ & ( \sw[5]~input_o\ & ( (\sw[7]~input_o\ & \sw[6]~input_o\) ) ) ) # ( !\sw[4]~input_o\ & ( \sw[5]~input_o\ & ( !\sw[7]~input_o\ $ (\sw[6]~input_o\) ) ) ) # ( !\sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( 
+-- (\sw[7]~input_o\ & \sw[6]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000001100000011000000110000001111110011111100110011001100110011",
+	lut_mask => "0000001100000011000000000000000011000011110000110000001100000011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -724,13 +724,13 @@ PORT MAP (
 -- Location: LABCELL_X83_Y16_N21
 \SevenSegmentsL|Mux3~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \SevenSegmentsL|Mux3~0_combout\ = ( \sw[4]~input_o\ & ( \sw[5]~input_o\ & ( (\sw[7]~input_o\) # (\sw[6]~input_o\) ) ) ) # ( !\sw[4]~input_o\ & ( \sw[5]~input_o\ & ( \sw[7]~input_o\ ) ) ) # ( \sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( (!\sw[6]~input_o\) # 
--- (\sw[7]~input_o\) ) ) ) # ( !\sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( \sw[6]~input_o\ ) ) )
+-- \SevenSegmentsL|Mux3~0_combout\ = ( \sw[4]~input_o\ & ( \sw[5]~input_o\ & ( \sw[6]~input_o\ ) ) ) # ( !\sw[4]~input_o\ & ( \sw[5]~input_o\ & ( (!\sw[6]~input_o\ & \sw[7]~input_o\) ) ) ) # ( \sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( !\sw[6]~input_o\ ) ) ) # 
+-- ( !\sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( (\sw[6]~input_o\ & !\sw[7]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010101010101101011111010111100001111000011110101111101011111",
+	lut_mask => "0101000001010000101010101010101000001010000010100101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -743,12 +743,13 @@ PORT MAP (
 -- Location: LABCELL_X83_Y16_N54
 \SevenSegmentsL|Mux2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \SevenSegmentsL|Mux2~0_combout\ = ( \sw[4]~input_o\ & ( \sw[5]~input_o\ ) ) # ( !\sw[4]~input_o\ & ( \sw[5]~input_o\ & ( \sw[7]~input_o\ ) ) ) # ( \sw[4]~input_o\ & ( !\sw[5]~input_o\ ) ) # ( !\sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( \sw[6]~input_o\ ) ) )
+-- \SevenSegmentsL|Mux2~0_combout\ = ( \sw[4]~input_o\ & ( \sw[5]~input_o\ & ( !\sw[7]~input_o\ ) ) ) # ( \sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( (!\sw[7]~input_o\) # (!\sw[6]~input_o\) ) ) ) # ( !\sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( (!\sw[7]~input_o\ & 
+-- \sw[6]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111111111111111111100110011001100111111111111111111",
+	lut_mask => "0000110000001100111111001111110000000000000000001100110011001100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -761,13 +762,13 @@ PORT MAP (
 -- Location: LABCELL_X83_Y16_N33
 \SevenSegmentsL|Mux1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \SevenSegmentsL|Mux1~0_combout\ = ( \sw[4]~input_o\ & ( \sw[5]~input_o\ ) ) # ( !\sw[4]~input_o\ & ( \sw[5]~input_o\ & ( (!\sw[6]~input_o\) # (\sw[7]~input_o\) ) ) ) # ( \sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( !\sw[6]~input_o\ $ (\sw[7]~input_o\) ) ) ) # 
--- ( !\sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( (\sw[6]~input_o\ & \sw[7]~input_o\) ) ) )
+-- \SevenSegmentsL|Mux1~0_combout\ = ( \sw[4]~input_o\ & ( \sw[5]~input_o\ & ( !\sw[7]~input_o\ ) ) ) # ( !\sw[4]~input_o\ & ( \sw[5]~input_o\ & ( (!\sw[6]~input_o\ & !\sw[7]~input_o\) ) ) ) # ( \sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( !\sw[6]~input_o\ $ 
+-- (\sw[7]~input_o\) ) ) ) # ( !\sw[4]~input_o\ & ( !\sw[5]~input_o\ & ( (\sw[6]~input_o\ & \sw[7]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000010100000101101001011010010110101111101011111111111111111111",
+	lut_mask => "0000010100000101101001011010010110100000101000001111000011110000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -799,12 +800,12 @@ PORT MAP (
 -- Location: LABCELL_X83_Y4_N24
 \SevenSegmentsR|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \SevenSegmentsR|Mux6~0_combout\ = ( \sw[3]~input_o\ & ( (\sw[2]~input_o\) # (\sw[1]~input_o\) ) ) # ( !\sw[3]~input_o\ & ( (!\sw[1]~input_o\ & (!\sw[0]~input_o\ $ (!\sw[2]~input_o\))) ) )
+-- \SevenSegmentsR|Mux6~0_combout\ = ( \sw[3]~input_o\ & ( (!\sw[1]~input_o\ & ((\sw[2]~input_o\))) # (\sw[1]~input_o\ & (\sw[0]~input_o\ & !\sw[2]~input_o\)) ) ) # ( !\sw[3]~input_o\ & ( (!\sw[1]~input_o\ & (!\sw[0]~input_o\ $ (!\sw[2]~input_o\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010100000101000001010000010100001011111010111110101111101011111",
+	lut_mask => "0010100000101000001010000010100000011010000110100001101000011010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -817,12 +818,12 @@ PORT MAP (
 -- Location: LABCELL_X83_Y4_N33
 \SevenSegmentsR|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \SevenSegmentsR|Mux5~0_combout\ = ( \sw[3]~input_o\ & ( (\sw[1]~input_o\) # (\sw[2]~input_o\) ) ) # ( !\sw[3]~input_o\ & ( (\sw[2]~input_o\ & (!\sw[0]~input_o\ $ (!\sw[1]~input_o\))) ) )
+-- \SevenSegmentsR|Mux5~0_combout\ = ( \sw[3]~input_o\ & ( (!\sw[0]~input_o\ & (\sw[2]~input_o\)) # (\sw[0]~input_o\ & ((\sw[1]~input_o\))) ) ) # ( !\sw[3]~input_o\ & ( (\sw[2]~input_o\ & (!\sw[0]~input_o\ $ (!\sw[1]~input_o\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001010000010100000101000001010001011111010111110101111101011111",
+	lut_mask => "0001010000010100000101000001010001000111010001110100011101000111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -835,12 +836,12 @@ PORT MAP (
 -- Location: LABCELL_X83_Y4_N36
 \SevenSegmentsR|Mux4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \SevenSegmentsR|Mux4~0_combout\ = ( \sw[3]~input_o\ & ( (\sw[1]~input_o\) # (\sw[2]~input_o\) ) ) # ( !\sw[3]~input_o\ & ( (!\sw[0]~input_o\ & (!\sw[2]~input_o\ & \sw[1]~input_o\)) ) )
+-- \SevenSegmentsR|Mux4~0_combout\ = ( \sw[3]~input_o\ & ( (\sw[2]~input_o\ & ((!\sw[0]~input_o\) # (\sw[1]~input_o\))) ) ) # ( !\sw[3]~input_o\ & ( (!\sw[0]~input_o\ & (!\sw[2]~input_o\ & \sw[1]~input_o\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000011000000000000001100000000001111111111110000111111111111",
+	lut_mask => "0000000011000000000000001100000000001100000011110000110000001111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -853,12 +854,13 @@ PORT MAP (
 -- Location: LABCELL_X83_Y4_N12
 \SevenSegmentsR|Mux3~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \SevenSegmentsR|Mux3~0_combout\ = ( \sw[1]~input_o\ & ( ((\sw[2]~input_o\ & \sw[0]~input_o\)) # (\sw[3]~input_o\) ) ) # ( !\sw[1]~input_o\ & ( (!\sw[2]~input_o\ & (\sw[0]~input_o\)) # (\sw[2]~input_o\ & ((!\sw[0]~input_o\) # (\sw[3]~input_o\))) ) )
+-- \SevenSegmentsR|Mux3~0_combout\ = ( \sw[1]~input_o\ & ( (!\sw[2]~input_o\ & (!\sw[0]~input_o\ & \sw[3]~input_o\)) # (\sw[2]~input_o\ & (\sw[0]~input_o\)) ) ) # ( !\sw[1]~input_o\ & ( (!\sw[2]~input_o\ & (\sw[0]~input_o\)) # (\sw[2]~input_o\ & 
+-- (!\sw[0]~input_o\ & !\sw[3]~input_o\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0110011101100111011001110110011100011111000111110001111100011111",
+	lut_mask => "0110001001100010011000100110001000011001000110010001100100011001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -871,12 +873,12 @@ PORT MAP (
 -- Location: LABCELL_X83_Y4_N30
 \SevenSegmentsR|Mux2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \SevenSegmentsR|Mux2~0_combout\ = ( \sw[1]~input_o\ & ( (\sw[3]~input_o\) # (\sw[0]~input_o\) ) ) # ( !\sw[1]~input_o\ & ( (\sw[0]~input_o\) # (\sw[2]~input_o\) ) )
+-- \SevenSegmentsR|Mux2~0_combout\ = ( \sw[1]~input_o\ & ( (\sw[0]~input_o\ & !\sw[3]~input_o\) ) ) # ( !\sw[1]~input_o\ & ( (!\sw[2]~input_o\ & (\sw[0]~input_o\)) # (\sw[2]~input_o\ & ((!\sw[3]~input_o\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0111011101110111011101110111011100111111001111110011111100111111",
+	lut_mask => "0111001001110010011100100111001000110000001100000011000000110000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -889,12 +891,12 @@ PORT MAP (
 -- Location: LABCELL_X83_Y4_N39
 \SevenSegmentsR|Mux1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \SevenSegmentsR|Mux1~0_combout\ = ( \sw[3]~input_o\ & ( (\sw[1]~input_o\) # (\sw[2]~input_o\) ) ) # ( !\sw[3]~input_o\ & ( (!\sw[2]~input_o\ & ((\sw[1]~input_o\) # (\sw[0]~input_o\))) # (\sw[2]~input_o\ & (\sw[0]~input_o\ & \sw[1]~input_o\)) ) )
+-- \SevenSegmentsR|Mux1~0_combout\ = ( \sw[3]~input_o\ & ( (\sw[2]~input_o\ & !\sw[1]~input_o\) ) ) # ( !\sw[3]~input_o\ & ( (!\sw[2]~input_o\ & ((\sw[1]~input_o\) # (\sw[0]~input_o\))) # (\sw[2]~input_o\ & (\sw[0]~input_o\ & \sw[1]~input_o\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010101100101011001010110010101101011111010111110101111101011111",
+	lut_mask => "0010101100101011001010110010101101010000010100000101000001010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (

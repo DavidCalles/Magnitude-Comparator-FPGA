@@ -1,14 +1,17 @@
 -- Comparator.vhd
 
--- TOP ENTITY
+--***********************************************************************
+--	Description: Magnitude comparator implemented to the logic gate 
+--						level.
+--	
+--	Inputs: 		 A,B 4-bit integers as boolean arrays.
+--	
+--	Outputs: 	Equal, will be 1 if inputs are equal
+--					BigA, will be 1 if A is bigger than B
+--					BigB, will be 1 if B is bigger than A
+--***********************************************************************
 
---***********************************************************************
---	Description: 
---	
---	Inputs: 	
---	
---	Outputs: 
---***********************************************************************
+-- Libraries
 
 library IEEE;
 use IEEE.std_logic_1164.all;
