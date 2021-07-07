@@ -1,0 +1,98 @@
+|DCalles_Lab5_MagnitudeComparator
+sw[0] => sw[0].IN2
+sw[1] => sw[1].IN2
+sw[2] => sw[2].IN2
+sw[3] => sw[3].IN2
+sw[4] => sw[4].IN2
+sw[5] => sw[5].IN2
+sw[6] => sw[6].IN2
+sw[7] => sw[7].IN2
+led[0] << ComparisonSignal[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] << ComparisonSignal[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] << ComparisonSignal[2].DB_MAX_OUTPUT_PORT_TYPE
+segmentA[0] << SevenSegments:SevenSegmentsL.port1
+segmentA[1] << SevenSegments:SevenSegmentsL.port1
+segmentA[2] << SevenSegments:SevenSegmentsL.port1
+segmentA[3] << SevenSegments:SevenSegmentsL.port1
+segmentA[4] << SevenSegments:SevenSegmentsL.port1
+segmentA[5] << SevenSegments:SevenSegmentsL.port1
+segmentA[6] << SevenSegments:SevenSegmentsL.port1
+segmentB[0] << SevenSegments:SevenSegmentsR.port1
+segmentB[1] << SevenSegments:SevenSegmentsR.port1
+segmentB[2] << SevenSegments:SevenSegmentsR.port1
+segmentB[3] << SevenSegments:SevenSegmentsR.port1
+segmentB[4] << SevenSegments:SevenSegmentsR.port1
+segmentB[5] << SevenSegments:SevenSegmentsR.port1
+segmentB[6] << SevenSegments:SevenSegmentsR.port1
+segmentM[0] << SevenSegmentsModified:SevenSegmentsM.port1
+segmentM[1] << SevenSegmentsModified:SevenSegmentsM.port1
+segmentM[2] << SevenSegmentsModified:SevenSegmentsM.port1
+segmentM[3] << SevenSegmentsModified:SevenSegmentsM.port1
+segmentM[4] << SevenSegmentsModified:SevenSegmentsM.port1
+segmentM[5] << SevenSegmentsModified:SevenSegmentsM.port1
+segmentM[6] << SevenSegmentsModified:SevenSegmentsM.port1
+
+
+|DCalles_Lab5_MagnitudeComparator|Comparator:Comparator1
+A[0] => EqualSignal.IN0
+A[0] => BigASignal.IN0
+A[1] => EqualSignal.IN0
+A[1] => BigASignal.IN0
+A[2] => EqualSignal.IN0
+A[2] => BigASignal.IN0
+A[3] => EqualSignal.IN0
+A[3] => BigASignal[3].IN0
+B[0] => EqualSignal.IN1
+B[0] => BigASignal.IN1
+B[1] => EqualSignal.IN1
+B[1] => BigASignal.IN1
+B[2] => EqualSignal.IN1
+B[2] => BigASignal.IN1
+B[3] => EqualSignal.IN1
+B[3] => BigASignal[3].IN1
+Equal <= EqualSignalOut.DB_MAX_OUTPUT_PORT_TYPE
+BigA <= BigASignalOut.DB_MAX_OUTPUT_PORT_TYPE
+BigB <= BigBSignalOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DCalles_Lab5_MagnitudeComparator|SevenSegments:SevenSegmentsL
+ones[0] => Decoder0.IN3
+ones[1] => Decoder0.IN2
+ones[2] => Decoder0.IN1
+ones[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DCalles_Lab5_MagnitudeComparator|SevenSegments:SevenSegmentsR
+ones[0] => Decoder0.IN3
+ones[1] => Decoder0.IN2
+ones[2] => Decoder0.IN1
+ones[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DCalles_Lab5_MagnitudeComparator|SevenSegmentsModified:SevenSegmentsM
+ones[0] => Decoder0.IN2
+ones[1] => Decoder0.IN1
+ones[2] => Decoder0.IN0
+segments[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= <VCC>
+segments[2] <= <VCC>
+segments[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= <GND>
+
+
