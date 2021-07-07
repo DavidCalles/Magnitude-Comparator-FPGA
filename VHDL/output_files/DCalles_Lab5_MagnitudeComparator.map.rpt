@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DCalles_Lab5_MagnitudeComparator
-Wed Jul 07 18:00:55 2021
+Wed Jul 07 19:00:13 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Jul 07 18:00:55 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Jul 07 19:00:13 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; DCalles_Lab5_MagnitudeComparator            ;
 ; Top-level Entity Name           ; DCalles_Lab5_MagnitudeComparator            ;
@@ -268,28 +268,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jul 07 18:00:46 2021
+    Info: Processing started: Wed Jul 07 19:00:03 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DCalles_Lab5_MagnitudeComparator -c DCalles_Lab5_MagnitudeComparator
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file dcalles_lab5_magnitudecomparator.vhd
-    Info (12022): Found design unit 1: DCalles_Lab5_MagnitudeComparator-Behavioral File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/DCalles_Lab5_MagnitudeComparator.vhd Line: 41
-    Info (12023): Found entity 1: DCalles_Lab5_MagnitudeComparator File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/DCalles_Lab5_MagnitudeComparator.vhd Line: 23
+    Info (12022): Found design unit 1: DCalles_Lab5_MagnitudeComparator-Behavioral File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/DCalles_Lab5_MagnitudeComparator.vhd Line: 43
+    Info (12023): Found entity 1: DCalles_Lab5_MagnitudeComparator File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/DCalles_Lab5_MagnitudeComparator.vhd Line: 25
 Info (12021): Found 2 design units, including 1 entities, in source file comparator.vhd
-    Info (12022): Found design unit 1: Comparator-Combinatory File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/Comparator.vhd Line: 33
-    Info (12023): Found entity 1: Comparator File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/Comparator.vhd Line: 20
+    Info (12022): Found design unit 1: Comparator-Combinatory File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/Comparator.vhd Line: 35
+    Info (12023): Found entity 1: Comparator File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/Comparator.vhd Line: 22
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegments.vhd
-    Info (12022): Found design unit 1: SevenSegments-Behavioral File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/SevenSegments.vhd Line: 29
-    Info (12023): Found entity 1: SevenSegments File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/SevenSegments.vhd Line: 19
+    Info (12022): Found design unit 1: SevenSegments-Behavioral File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/SevenSegments.vhd Line: 31
+    Info (12023): Found entity 1: SevenSegments File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/SevenSegments.vhd Line: 21
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegmentsmodified.vhd
-    Info (12022): Found design unit 1: SevenSegmentsModified-Behavioral File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/SevenSegmentsModified.vhd Line: 29
-    Info (12023): Found entity 1: SevenSegmentsModified File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/SevenSegmentsModified.vhd Line: 19
+    Info (12022): Found design unit 1: SevenSegmentsModified-Behavioral File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/SevenSegmentsModified.vhd Line: 31
+    Info (12023): Found entity 1: SevenSegmentsModified File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/SevenSegmentsModified.vhd Line: 21
 Info (12127): Elaborating entity "DCalles_Lab5_MagnitudeComparator" for the top level hierarchy
-Info (12128): Elaborating entity "Comparator" for hierarchy "Comparator:Comparator1" File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/DCalles_Lab5_MagnitudeComparator.vhd Line: 78
-Info (12128): Elaborating entity "SevenSegments" for hierarchy "SevenSegments:SevenSegmentsL" File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/DCalles_Lab5_MagnitudeComparator.vhd Line: 83
-Info (12128): Elaborating entity "SevenSegmentsModified" for hierarchy "SevenSegmentsModified:SevenSegmentsM" File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/DCalles_Lab5_MagnitudeComparator.vhd Line: 91
+Info (12128): Elaborating entity "Comparator" for hierarchy "Comparator:Comparator1" File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/DCalles_Lab5_MagnitudeComparator.vhd Line: 80
+Info (12128): Elaborating entity "SevenSegments" for hierarchy "SevenSegments:SevenSegmentsL" File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/DCalles_Lab5_MagnitudeComparator.vhd Line: 85
+Info (12128): Elaborating entity "SevenSegmentsModified" for hierarchy "SevenSegmentsModified:SevenSegmentsM" File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/DCalles_Lab5_MagnitudeComparator.vhd Line: 93
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "segmentM[6]" is stuck at GND File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/DCalles_Lab5_MagnitudeComparator.vhd Line: 29
+    Warning (13410): Pin "segmentM[6]" is stuck at GND File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/DCalles_Lab5_MagnitudeComparator.vhd Line: 31
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -298,9 +298,9 @@ Info (21057): Implemented 53 device resources after synthesis - the final resour
     Info (21059): Implemented 24 output pins
     Info (21061): Implemented 21 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4839 megabytes
-    Info: Processing ended: Wed Jul 07 18:00:55 2021
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4837 megabytes
+    Info: Processing ended: Wed Jul 07 19:00:13 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:22
 
 

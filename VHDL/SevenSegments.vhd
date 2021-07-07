@@ -59,7 +59,7 @@ begin
 			when "1011"  =>   
 				segmentLed <= "0000011"; -- segment b
 			when "1100"  =>   
-				segmentLed <= "0100111"; -- segment c
+				segmentLed <= "1000110"; -- segment C
 			when "1101"  =>   
 				segmentLed <= "0100001"; -- segment d
 			when "1110"  =>   

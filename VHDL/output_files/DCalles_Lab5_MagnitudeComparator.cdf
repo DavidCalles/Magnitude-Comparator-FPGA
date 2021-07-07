@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/VHDL/output_files/") File("DCalles_Lab5_MagnitudeComparator.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/VHDL/output_files/") File("DCalles_Lab5_MagnitudeComparator.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
