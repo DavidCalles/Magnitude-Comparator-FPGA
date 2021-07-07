@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentM[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentM[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

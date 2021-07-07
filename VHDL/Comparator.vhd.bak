@@ -1,0 +1,63 @@
+-- Comparator.vhd
+
+-- TOP ENTITY
+
+--***********************************************************************
+--	Description: 
+--	
+--	Inputs: 	
+--	
+--	Outputs: 
+--***********************************************************************
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.NUMERIC_STD.ALL;
+
+-- Entity declaration
+
+entity Comparator is
+
+    port(A		: in std_logic_vector(3 downto 0); 
+			B 		: in std_logic_vector(3 downto 0);     
+         Equal : out std_logic;
+			BigA  : out std_logic;
+			BigB  : out std_logic);
+			
+
+end Comparator;
+
+-- Architecture definition
+
+architecture Combinatory of Comparator is
+
+--------------------------------------------------------------------------
+---------------- COMPONENTS DEFINED IN SEPARATE FILES --------------------
+--------------------------------------------------------------------------
+
+-- Get prescaled clocks through counter bits
+	component Counter_32bit
+		port(clkC 		: in std_logic;     
+			  prescaled : out std_logic_vector(7 downto 0));
+	end component;
+
+--------------------------------------------------------------------------
+------------------------- INTERMEDIATE SIGNALS ---------------------------
+--------------------------------------------------------------------------
+	signal prescaledSignal : std_logic_vector(7 downto 0);
+
+
+begin
+--------------------------------------------------------------------------
+-------------------------- COMPONENTS MAPPING ----------------------------
+--------------------------------------------------------------------------
+
+	Counter_32bit1: Counter_32bit 
+		port map (clk, prescaledSignal); 
+		
+--------------------------------------------------------------------------
+-------------------------- ARCHITECTURE LOGIC ----------------------------
+--------------------------------------------------------------------------
+
+
+end;
