@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DCalles_Lab5_MagnitudeComparator
-Wed Jul 07 19:11:00 2021
+Wed Jul 07 19:16:14 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Jul 07 19:11:00 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Jul 07 19:16:14 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; DCalles_Lab5_MagnitudeComparator            ;
 ; Top-level Entity Name           ; DCalles_Lab5_MagnitudeComparator            ;
@@ -200,8 +200,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; sw[0]~input ;
 ; Maximum fan-out                             ; 12          ;
-; Total fan-out                               ; 146         ;
-; Average fan-out                             ; 1.72        ;
+; Total fan-out                               ; 148         ;
+; Average fan-out                             ; 1.74        ;
 +---------------------------------------------+-------------+
 
 
@@ -241,15 +241,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; arriav_lcell_comb     ; 27                          ;
 ;     normal            ; 27                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 4                           ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 5                           ;
 ;         4 data inputs ; 16                          ;
 ;         5 data inputs ; 1                           ;
 ;         6 data inputs ; 4                           ;
 ; boundary_port         ; 32                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.83                        ;
+; Average LUT depth     ; 1.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -268,7 +268,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jul 07 19:10:52 2021
+    Info: Processing started: Wed Jul 07 19:16:05 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DCalles_Lab5_MagnitudeComparator -c DCalles_Lab5_MagnitudeComparator
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -281,20 +281,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file sevense
 Info (12021): Found 1 design units, including 1 entities, in source file comparator.v
     Info (12023): Found entity 1: Comparator File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/Comparator.v Line: 17
 Info (12127): Elaborating entity "DCalles_Lab5_MagnitudeComparator" for the top level hierarchy
-Info (12128): Elaborating entity "Comparator" for hierarchy "Comparator:Comparator1" File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/DCalles_Lab5_MagnitudeComparator.v Line: 48
-Info (12128): Elaborating entity "SevenSegments" for hierarchy "SevenSegments:SevenSegmentsL" File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/DCalles_Lab5_MagnitudeComparator.v Line: 51
-Warning (10272): Verilog HDL Case Statement warning at SevenSegments.v(27): case item expression covers a value already covered by a previous case item File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/SevenSegments.v Line: 27
-Warning (10272): Verilog HDL Case Statement warning at SevenSegments.v(28): case item expression covers a value already covered by a previous case item File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/SevenSegments.v Line: 28
-Warning (10272): Verilog HDL Case Statement warning at SevenSegments.v(29): case item expression covers a value already covered by a previous case item File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/SevenSegments.v Line: 29
-Warning (10272): Verilog HDL Case Statement warning at SevenSegments.v(30): case item expression covers a value already covered by a previous case item File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/SevenSegments.v Line: 30
-Warning (10272): Verilog HDL Case Statement warning at SevenSegments.v(31): case item expression covers a value already covered by a previous case item File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/SevenSegments.v Line: 31
-Warning (10272): Verilog HDL Case Statement warning at SevenSegments.v(32): case item expression covers a value already covered by a previous case item File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/SevenSegments.v Line: 32
-Info (12128): Elaborating entity "SevenSegmentsModified" for hierarchy "SevenSegmentsModified:SevenSegmentsM" File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/DCalles_Lab5_MagnitudeComparator.v Line: 59
-Warning (10272): Verilog HDL Case Statement warning at SevenSegmentsModified.v(21): case item expression covers a value already covered by a previous case item File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/SevenSegmentsModified.v Line: 21
+Info (12128): Elaborating entity "Comparator" for hierarchy "Comparator:Comparator1" File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/DCalles_Lab5_MagnitudeComparator.v Line: 49
+Info (12128): Elaborating entity "SevenSegments" for hierarchy "SevenSegments:SevenSegmentsL" File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/DCalles_Lab5_MagnitudeComparator.v Line: 52
+Info (12128): Elaborating entity "SevenSegmentsModified" for hierarchy "SevenSegmentsModified:SevenSegmentsM" File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/DCalles_Lab5_MagnitudeComparator.v Line: 60
 Info (10264): Verilog HDL Case Statement information at SevenSegmentsModified.v(18): all case item expressions in this case statement are onehot File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/SevenSegmentsModified.v Line: 18
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "segmentM[1]" is stuck at VCC File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/DCalles_Lab5_MagnitudeComparator.v Line: 25
-    Warning (13410): Pin "segmentM[2]" is stuck at VCC File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/DCalles_Lab5_MagnitudeComparator.v Line: 25
     Warning (13410): Pin "segmentM[6]" is stuck at GND File: C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/DCalles_Lab5_MagnitudeComparator.v Line: 25
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -303,10 +294,10 @@ Info (21057): Implemented 53 device resources after synthesis - the final resour
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 24 output pins
     Info (21061): Implemented 21 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Wed Jul 07 19:11:00 2021
-    Info: Elapsed time: 00:00:08
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4812 megabytes
+    Info: Processing ended: Wed Jul 07 19:16:14 2021
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:20
 
 

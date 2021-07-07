@@ -16,9 +16,9 @@ module SevenSegmentsModified(
 	always@(ones)
 	begin
 		case(ones)
-			3'b100 : segments = 7'b0110110; // segment =
-			3'b010 : segments = 7'b0001111; // segment >
-			3'b100 : segments = 7'b0111001; // segment <
+			3'b100  : segments = 7'b0110110; // segment =
+			3'b010  : segments = 7'b0001111; // segment >
+			3'b001  : segments = 7'b0111001; // segment <
 			default : segments = 7'b0111111; // segment -
 		endcase
 	end

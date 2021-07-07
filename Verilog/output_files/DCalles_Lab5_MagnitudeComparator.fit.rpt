@@ -1,5 +1,5 @@
 Fitter report for DCalles_Lab5_MagnitudeComparator
-Wed Jul 07 19:11:29 2021
+Wed Jul 07 19:16:43 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Jul 07 19:11:29 2021       ;
+; Fitter Status                   ; Successful - Wed Jul 07 19:16:43 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; DCalles_Lab5_MagnitudeComparator            ;
 ; Top-level Entity Name           ; DCalles_Lab5_MagnitudeComparator            ;
@@ -151,7 +151,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.2%      ;
 ;     Processor 3            ;   0.1%      ;
 ;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
@@ -292,12 +292,12 @@ The pin-out file can be found in C:/Users/yodav/Documents/Conestoga_College/FIRS
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.4% / 0.3% / 0.7% ;       ;
+; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.1% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.4% / 0.3% / 0.8% ;       ;
 ; Maximum fan-out                                             ; 12                 ;       ;
 ; Highest non-global fan-out                                  ; 12                 ;       ;
-; Total fan-out                                               ; 146                ;       ;
-; Average fan-out                                             ; 1.70               ;       ;
+; Total fan-out                                               ; 148                ;       ;
+; Average fan-out                                             ; 1.72               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -359,7 +359,7 @@ The pin-out file can be found in C:/Users/yodav/Documents/Conestoga_College/FIRS
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 146                  ; 0                              ;
+;     -- Total Connections                                    ; 148                  ; 0                              ;
 ;     -- Registered Connections                               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
@@ -1561,10 +1561,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+------------------------+
 ; Routing Resource Type                       ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Block interconnects                         ; 35 / 289,320 ( < 1 % ) ;
+; Block interconnects                         ; 37 / 289,320 ( < 1 % ) ;
 ; C12 interconnects                           ; 18 / 13,420 ( < 1 % )  ;
 ; C2 interconnects                            ; 16 / 119,108 ( < 1 % ) ;
-; C4 interconnects                            ; 25 / 56,300 ( < 1 % )  ;
+; C4 interconnects                            ; 28 / 56,300 ( < 1 % )  ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )         ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )         ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )         ;
@@ -1628,8 +1628,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )         ;
 ; R14 interconnects                           ; 49 / 12,676 ( < 1 % )  ;
 ; R14/C12 interconnect drivers                ; 56 / 20,720 ( < 1 % )  ;
-; R3 interconnects                            ; 21 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 24 / 266,960 ( < 1 % ) ;
+; R3 interconnects                            ; 19 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 27 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 0 / 360 ( 0 % )        ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )     ;
 +---------------------------------------------+------------------------+
@@ -1809,7 +1809,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1817,8 +1817,8 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file C:/Users/yodav/Documents/Conestoga_College/FIRST_TERM/Digital_Design/LABS/Lab5/Magnitude-Comparator-FPGA/Verilog/output_files/DCalles_Lab5_MagnitudeComparator.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6496 megabytes
-    Info: Processing ended: Wed Jul 07 19:11:29 2021
+    Info: Peak virtual memory: 6493 megabytes
+    Info: Processing ended: Wed Jul 07 19:16:43 2021
     Info: Elapsed time: 00:00:28
     Info: Total CPU time (on all processors): 00:00:51
 

@@ -76,6 +76,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "segmentM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segmentM[2]",
+					"strict" : false
+				},
+				{
 					"name" : "segmentM[3]",
 					"strict" : false
 				},
